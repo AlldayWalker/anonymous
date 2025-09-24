@@ -481,11 +481,6 @@
                 forms decoupled representation and incremental learning of knowledge in a high-dimensional space.
             </div>
 
-            <div class="image-container">
-                <img src="static/CDS.jpg" alt="Main picture">
-            </div>
-            <p class="content-text">Illustration of the fifth-order tensor TuKA architecture. </p>
-
             <div class="content-paper-text">
                 In order to learn the $t$-th navigation scenario task (with the $s$-th scene and the $e$-th environment) $T_{t} = \{S_{s},E_{e}\}$, 
                 we propose a new type of finetuning method named Tucker-Adaption (TuKA) to finetune the pretrained StreamVLN agent $\mathcal{F}_{\theta_{0}}$, 
@@ -519,8 +514,13 @@
 
         <section class="section experiment-section">
             <h2 class="section-title">AlldayWaker Algorithms</h2>
-            <div class="image-container">
-                <img src="static/algorithm.png" alt="Main picture">
+            <div style="height: 10%;width: auto;">
+                <div class="image-container">
+                    <img src="static/algorithm1.png" alt="Main picture" width="85%" height="auto">
+                </div>
+                <div class="image-container">
+                    <img src="static/algorithm2.png" alt="Main picture" width="85%" height="auto">
+                </div>
             </div>
             <p class="content-text">For clarity, a summary of the proposed AlldayWaker learning algorithm and the inference algorithm is provided above.</p>
         </section>
@@ -547,45 +547,10 @@
             </div>
             <h2 class="section-subtitle">Vision-Language Navigation in Real World</h2>
             
-            <div class="content-text">
-                <div class="video-container">
-                    <!-- 左边视频卡片 -->
-                    <div class="video-card">
-                        <div class="video-meta">
-                            <h3 class="video-scene">Scene: real-world 1</h3>
-                            <h3 class="video-environment">Environment: Normal</h3>
-                        </div>
-                        <div class="video-wrapper">
-                            <video controls>
-                                <source src="static/video-Real/000.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="video-overlay">Speed 1X</div>
-                        </div>
-                        <h3 class="video-instruction">Turn right and exit into the bedroom. Turn left and walk to the wall and then turn left. Walk to the end of that area and turn right out the last door. Once out the door walk across the small room and enter the door to the far left. Stop once you enter the bedroom.</h3>
-                    </div>
-
-                    <!-- 右边视频卡片 -->
-                    <div class="video-card">
-                        <div class="video-meta">
-                            <h3 class="video-scene">Scene: real-world 1</h3>
-                            <h3 class="video-environment">Environment: Low-light</h3>
-                        </div>
-                        <div class="video-wrapper">
-                            <video controls>
-                                <source src="static/video-Real/001.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="video-overlay">Speed 1X</div>
-                        </div>
-                        <h3 class="video-instruction">go straight down hall to archway on your left turn left and walk straight to first doorway on your right, stop in doorway.</h3>
-                    </div>
-                </div>
-            </div>
 
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: real-world 2</h3>
@@ -598,10 +563,36 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Turn right and exit into the bedroom. Turn left and walk to the wall and then turn left. Walk to the end of that area and turn right out the last door. Once out the door walk across the small room and enter the door to the far left. Stop once you enter the bedroom.</h3>
+                        <h3 class="video-instruction">
+                            <p style="color: red;font-weight: bold;font-size: 22px;">Task21</p>
+                            Walk straight ahead, bypass the pole on the left, and find the cup in the middle of the blue cone and in front of the yellow cone.
+                        </h3>
                     </div>
+                    <!-- right video -->
+                    <div class="video-card">
+                        <div class="video-meta">
+                            <h3 class="video-scene">Scene: real-world 1</h3>
+                            <h3 class="video-environment">Environment: Low-light</h3>
+                        </div>
+                        <div class="video-wrapper">
+                            <video controls>
+                                <source src="static/video-Real/001.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">Speed 1X</div>
+                        </div>
+                        <h3 class="video-instruction">
+                            <p style="color: red;font-weight: bold;font-size: 22px;">Task22</p>
+                            Find the red cone-shaped barrel on the right, pass through from the left side, then pass to the right of the blue cone-shaped barrel in front, and finally find the red ball next to the cardboard box.
+                        </h3>
+                    </div>
+                </div>
+            </div>
 
-                    <!-- 右边视频卡片 -->
+
+            <div class="content-text">
+                <div class="video-container">
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: real-world 2</h3>
@@ -614,11 +605,31 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">go straight down hall to archway on your left turn left and walk straight to first doorway on your right, stop in doorway.</h3>
+                        <h3 class="video-instruction">
+                            <p style="color: red;font-weight: bold;font-size: 22px;">Task23</p>
+                            Walk straight, pass around the left side of the cardboard box, and find the Cube located in front of the blue cone.
+                        </h3>
+                    </div>
+                    <!-- right video -->
+                    <div class="video-card">
+                        <div class="video-meta">
+                            <h3 class="video-scene">Scene: real-world 1</h3>
+                            <h3 class="video-environment">Environment: Normal</h3>
+                        </div>
+                        <div class="video-wrapper">
+                            <video controls>
+                                <source src="static/video-Real/000.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">Speed 1X</div>
+                        </div>
+                        <h3 class="video-instruction">
+                            <p style="color: red;font-weight: bold;font-size: 22px;">Task24</p>
+                            Pass through the left side of the blue cone-shaped barrel on the right, go around the left side of the cardboard box to the back of the box, and find the small red ball.
+                        </h3>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section class="section">
@@ -636,7 +647,7 @@
             <h2 class="section-subtitle">Vision-Language Navigation in Habitat Simulator</h2>
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: ac26ZMwG7aT</h3>
@@ -650,11 +661,11 @@
                             <div class="video-overlay">Speed 1X</div>
                         </div>
                         <div class="video-title">
-                            <h3 class="video-instruction">Go out of the room an take an immediate left. When you reach the hallway, go right. The second door on the left is a powder room, go in and wait there.</h3>
+                            <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task1</p>Go out of the room an take an immediate left. When you reach the hallway, go right. The second door on the left is a powder room, go in and wait there.</h3>
                         </div>
                     </div>
 
-                    <!-- 右边视频卡片 -->
+                    <!-- right video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: 5LpN3gDmAk7</h3>
@@ -668,7 +679,7 @@
                             <div class="video-overlay">Speed 1X</div>
                         </div>
                         <div class="video-title">
-                            <h3 class="video-instruction">Go straight and into the bedroom to the left of the stairs. Stop in the large doorway to the right of the bed.</h3>
+                            <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task2</p>Go straight and into the bedroom to the left of the stairs. Stop in the large doorway to the right of the bed.</h3>
                         </div>
                     </div>
                 </div>
@@ -676,7 +687,7 @@
 
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: S9hNv5qa7GM</h3>
@@ -689,10 +700,10 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Exit the room using the door on the right. Turn left and go through the kitchen. Go past the table and chairs and wait near the stairs on the right.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task3</p>Exit the room using the door on the right. Turn left and go through the kitchen. Go past the table and chairs and wait near the stairs on the right.</h3>
                     </div>
 
-                    <!-- 右边视频卡片 -->
+                    <!-- right video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: mJXqzFtmKg4</h3>
@@ -705,14 +716,14 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Exit study and turn left. Stop at double doors and tall planter.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task4</p>Exit study and turn left. Stop at double doors and tall planter.</h3>
                     </div>
                 </div>
             </div>
 
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: mJXqzFtmKg4</h3>
@@ -725,10 +736,10 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Enter the room go out the door on the right turn left and wait right at the living room entrance.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task5</p>Enter the room go out the door on the right turn left and wait right at the living room entrance.</h3>
                     </div>
 
-                    <!-- 右边视频卡片 -->
+                    <!-- right video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: ULsKaCPVFJR</h3>
@@ -741,14 +752,14 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Walk past the mirror on your right, and continue to walk down the hallway. Walk into the room directly right of the doorway in front of you, and stop once you walk in.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task6</p>Walk past the mirror on your right, and continue to walk down the hallway. Walk into the room directly right of the doorway in front of you, and stop once you walk in.</h3>
                     </div>
                 </div>
             </div>
 
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: 5LpN3gDmAk7</h3>
@@ -761,10 +772,10 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Enter the house and walk around the chair to the open door on your right. Walk through the open door just to the left of the stairs. Walk to the end of the hall and turn left. Enter the bedroom and wait by the fireplace.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task7</p>Enter the house and walk around the chair to the open door on your right. Walk through the open door just to the left of the stairs. Walk to the end of the hall and turn left. Enter the bedroom and wait by the fireplace.</h3>
                     </div>
 
-                    <!-- 右边视频卡片 -->
+                    <!-- right video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: ac26ZMwG7aT</h3>
@@ -777,14 +788,14 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Leave the room, then take the left door in the next room.  Turn left and go all the way down the hallway into the walk-in closet.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task8</p>Leave the room, then take the left door in the next room.  Turn left and go all the way down the hallway into the walk-in closet.</h3>
                     </div>
                 </div>
             </div>
 
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: ULsKaCPVFJR</h3>
@@ -797,10 +808,10 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Walk straight through the doorway and take a right. Walk straight through the bathroom and stop passed the sink.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task9</p>Walk straight through the doorway and take a right. Walk straight through the bathroom and stop passed the sink.</h3>
                     </div>
 
-                    <!-- 右边视频卡片 -->
+                    <!-- right video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: ac26ZMwG7aT</h3>
@@ -813,14 +824,14 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Walk into the office and turn left. Walk into the bedroom and turn left. Walk down the hall and turn left. Walk into the bathroom and stop.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task10</p>Walk into the office and turn left. Walk into the bedroom and turn left. Walk down the hall and turn left. Walk into the bathroom and stop.</h3>
                     </div>
                 </div>
             </div>
 
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: ULsKaCPVFJR</h3>
@@ -833,10 +844,10 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Turn around and go down the long hallway. Turn the right corner, and turn left into the bathroom.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task11</p>Turn around and go down the long hallway. Turn the right corner, and turn left into the bathroom.</h3>
                     </div>
 
-                    <!-- 右边视频卡片 -->
+                    <!-- right video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: ULsKaCPVFJR</h3>
@@ -849,14 +860,14 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Walk out of the bathroom and take a left and walk straight, down the hall, into the bedroom. In the bedroom stop next to the photo of  sailboat on your right.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task12</p>Walk out of the bathroom and take a left and walk straight, down the hall, into the bedroom. In the bedroom stop next to the photo of  sailboat on your right.</h3>
                     </div>
                 </div>
             </div>
 
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: 5LpN3gDmAk7</h3>
@@ -869,10 +880,10 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Walk outside and pass the outdoor furniture.  Make a left before you reach the table, and enter the inside room on the left.  Wait here.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task13</p>Walk outside and pass the outdoor furniture.  Make a left before you reach the table, and enter the inside room on the left.  Wait here.</h3>
                     </div>
 
-                    <!-- 右边视频卡片 -->
+                    <!-- right video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: mJXqzFtmKg4</h3>
@@ -885,14 +896,14 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Walk toward the fireplace.  Exit the room and turn left.  Stop in front of the double doors and tall potted plant.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task14</p>Walk toward the fireplace.  Exit the room and turn left.  Stop in front of the double doors and tall potted plant.</h3>
                     </div>
                 </div>
             </div>
 
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: S9hNv5qa7GM</h3>
@@ -905,10 +916,10 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Walk straight down the hall and into the room straight ahead. Wait near the entrance.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task15</p>Walk straight down the hall and into the room straight ahead. Wait near the entrance.</h3>
                     </div>
 
-                    <!-- 右边视频卡片 -->
+                    <!-- right video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: S9hNv5qa7GM</h3>
@@ -921,14 +932,14 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Walk into the hardwood floored room, heading towards the fireplace at the opposite end. Once you're at the fireplace, turn right and go into the room ahead of you.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task16</p>Walk into the hardwood floored room, heading towards the fireplace at the opposite end. Once you're at the fireplace, turn right and go into the room ahead of you.</h3>
                     </div>
                 </div>
             </div>
 
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: mJXqzFtmKg4</h3>
@@ -941,10 +952,10 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Enter the room go out the door on the right turn left and wait right at the living room entrance.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task17</p>Enter the room go out the door on the right turn left and wait right at the living room entrance.</h3>
                     </div>
 
-                    <!-- 右边视频卡片 -->
+                    <!-- right video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: ac26ZMwG7aT</h3>
@@ -957,14 +968,14 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Exit the room with the TV, into the room with a wooden desk with two office chairs. Exit that room through the double doors, into the curving hall. Turn into the first room on the right and stop in the doorway.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task18</p>Exit the room with the TV, into the room with a wooden desk with two office chairs. Exit that room through the double doors, into the curving hall. Turn into the first room on the right and stop in the doorway.</h3>
                     </div>
                 </div>
             </div>
             
             <div class="content-text">
                 <div class="video-container">
-                    <!-- 左边视频卡片 -->
+                    <!-- left video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: 5LpN3gDmAk7</h3>
@@ -977,10 +988,10 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">Turn right and exit into the bedroom. Turn left and walk to the wall and then turn left. Walk to the end of that area and turn right out the last door. Once out the door walk across the small room and enter the door to the far left. Stop once you enter the bedroom.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task19</p>Turn right and exit into the bedroom. Turn left and walk to the wall and then turn left. Walk to the end of that area and turn right out the last door. Once out the door walk across the small room and enter the door to the far left. Stop once you enter the bedroom.</h3>
                     </div>
 
-                    <!-- 右边视频卡片 -->
+                    <!-- right video -->
                     <div class="video-card">
                         <div class="video-meta">
                             <h3 class="video-scene">Scene: mJXqzFtmKg4</h3>
@@ -993,7 +1004,7 @@
                             </video>
                             <div class="video-overlay">Speed 1X</div>
                         </div>
-                        <h3 class="video-instruction">go straight down hall to archway on your left turn left and walk straight to first doorway on your right, stop in doorway.</h3>
+                        <h3 class="video-instruction"><p style="color: red;font-weight: bold;font-size: 22px;">Task20</p>go straight down hall to archway on your left turn left and walk straight to first doorway on your right, stop in doorway.</h3>
                     </div>
                 </div>
             </div>
@@ -1009,12 +1020,23 @@
                 <img src="static/result2.png" alt="Main picture">
             </div>
             <p class="content-text">
-                Test results ( (a) <strong>SPL</strong> ↑, 
-                (b) <strong>F-SPL</strong> ↓, 
-                (c) <strong>OSR</strong> ↑, 
-                (d) <strong>F-OSR</strong> ↓ ) 
+                Test results ( (a) <strong>SPL ↑</strong>, 
+                (b) <strong>F-SPL ↓</strong>, 
+                (c) <strong>OSR ↑</strong>, 
+                (d) <strong>F-OSR ↓</strong>) 
                 of comparison experiment under the AML-VLN settings.
             </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Extension Experiments</h2>
+            <div class="image-container">
+                <img src="static/result3.png" alt="Main picture">
+            </div>
+            <div class="image-container">
+                <img src="static/CDS.jpg" alt="Main picture">
+            </div>
+            <p class="content-text">Illustration of the fifth-order tensor TuKA architecture. </p>
         </section>
     </div>
 </body>
