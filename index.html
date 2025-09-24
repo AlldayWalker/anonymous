@@ -63,11 +63,11 @@
         .btn {
             display: inline-flex;
             align-items: center;
-            padding: 8px 20px;
+            padding: 12px 28px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 1.1rem;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
@@ -99,8 +99,8 @@
         }
 
         .btn-icon {
-            width: 16px;
-            height: 16px;
+            width: 22px;
+            height: 22px;
             display: inline-block;
             vertical-align: middle;
         }
@@ -323,11 +323,11 @@
 
         .content-text {
             padding: 2px;
-            font-size: 120%;
+            font-size: 140%;
             color: #4A4A4A;
             line-height: 1.7;
             margin-bottom: 20px;
-            text-align: center;
+            text-align: left;
         }
 
         .content-paper-text {
@@ -427,33 +427,11 @@
             </div>
 
             <div class="buttons">
-                <a href="#" class="btn btn-arxiv">
-                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                        <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.75.75 0 1 1 1.06 1.06L9.06 8l3.22 3.22a.75.75 0 1 1-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 0 1-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/>
-                    </svg>
-                    &nbsparXiv
-                </a>
-                
-                <a href="#" class="btn btn-video">
-                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="M6.271 5.055a.5.5 0 0 1 .52.026L11 7.05a.5.5 0 0 1 0 .9L6.791 9.92a.5.5 0 0 1-.791-.398V5.478a.5.5 0 0 1 .271-.423z"/>
-                    </svg>
-                    &nbspVideo
-                </a>
-                
                 <a href="https://github.com/AlldayWalker/AlldayWalker" class="btn btn-code">
                     <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                     </svg>
-                    &nbspCode
-                </a>
-                
-                <a href="#" class="btn btn-data">
-                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zM6 9.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-4zm.5.5v3h7v-3h-7z"/>
-                    </svg>
-                    &nbspData
+                    &nbsp&nbspCode
                 </a>
             </div>
         </header>
@@ -486,7 +464,14 @@
         </div>
 
         <section class="section">
-            <h2 class="section-title">Approach</h2>
+            <h2 class="section-title">Method</h2>
+
+            <div class="image-container">
+                <img src="static/F2.jpg" alt="Main picture">
+            </div>
+
+            <p class="content-text">Illustration for comparison of existing LoRA and our TuKA architecture. Different from the LoRA or MoE-LoRA variants, which represent simple knowledge within a two-hierarchical matrix, TuKA decoupling represents the multi-hierarchical knowledge within a high-order tensor. </p>
+
             <div class="image-container">
                 <img src="static/F3.png" alt="Main picture">
             </div>
@@ -495,6 +480,11 @@
                 llustration of the proposed <strong>Decoupled Knowledge Incremental Learning.</strong> Our TuKA per-
                 forms decoupled representation and incremental learning of knowledge in a high-dimensional space.
             </div>
+
+            <div class="image-container">
+                <img src="static/CDS.jpg" alt="Main picture">
+            </div>
+            <p class="content-text">Illustration of the fifth-order tensor TuKA architecture. </p>
 
             <div class="content-paper-text">
                 In order to learn the $t$-th navigation scenario task (with the $s$-th scene and the $e$-th environment) $T_{t} = \{S_{s},E_{e}\}$, 
@@ -524,9 +514,18 @@
                 
                 $$\Delta W_{t} = U^{1} \cdot(\mathcal{G} \times_{3} U^{3}[s,:] \times_{4} U^{4}[e,:]) \cdot (U^{2})^{T}. \tag{2}$$
             </div>
+            
         </section>
 
         <section class="section experiment-section">
+            <h2 class="section-title">AlldayWaker Algorithms</h2>
+            <div class="image-container">
+                <img src="static/algorithm.png" alt="Main picture">
+            </div>
+            <p class="content-text">For clarity, a summary of the proposed AlldayWaker learning algorithm and the inference algorithm is provided above.</p>
+        </section>
+
+        <section class="section">
             <h2 class="section-title">Task Setting</h2>
             <div class="image-container">
                 <img src="static/F6.png" alt="Main picture">
@@ -537,16 +536,92 @@
 
         </section>
 
-        <section class="section">
-            <h2 class="section-title">AlldayWaker Algorithm</h2>
+        <section class="section experiment-section">
+            <h2 class="section-title">Real-World Experiments</h2>
+            <h2 class="section-subtitle">robotic navigation system introduction</h2>
             <div class="image-container">
-                <img src="static/algorithm.png" alt="Main picture">
+                <img src="static/FFF.jpg" alt="Main picture">
             </div>
-            <p class="content-text">For clarity, a summary of the proposed AlldayWaker learning algorithm and the inference algorithm is provided above.</p>
+            <div class="content-text">
+                The platform consists of a DeepRobotDog Lite2 quadruped robot, a Hikvision DS-E12 camera, a portable WiFi communication module, and a remote computation server equipped with an NVIDIA A6000 GPU. During deployment, the Hikvision DS-E12 mounted on the robot captures RGB visual streams from the real environment, providing essential perception signals for navigation and scene understanding. These visual data are transmitted in real time to the remote server through the portable WiFi module. The server performs inference using the proposed AlldayWalker system running on the A6000 GPU, which processes both user instructions and visual observations to generate navigation actions. The resulting control signals are then sent back to the DeepRobotDog Lite2 via the wireless communication channel. The robot executes these actions in the physical environment, enabling closed-loop interaction between perception, language reasoning, and embodied control. This platform supports flexible and robust experimentation of all-day multi-scene lifelong navigation, bridging simulation and real-world deployment.  
+            </div>
+            <h2 class="section-subtitle">Vision-Language Navigation in Real World</h2>
+            
+            <div class="content-text">
+                <div class="video-container">
+                    <!-- 左边视频卡片 -->
+                    <div class="video-card">
+                        <div class="video-meta">
+                            <h3 class="video-scene">Scene: real-world 1</h3>
+                            <h3 class="video-environment">Environment: Normal</h3>
+                        </div>
+                        <div class="video-wrapper">
+                            <video controls>
+                                <source src="static/video-Real/000.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">Speed 1X</div>
+                        </div>
+                        <h3 class="video-instruction">Turn right and exit into the bedroom. Turn left and walk to the wall and then turn left. Walk to the end of that area and turn right out the last door. Once out the door walk across the small room and enter the door to the far left. Stop once you enter the bedroom.</h3>
+                    </div>
+
+                    <!-- 右边视频卡片 -->
+                    <div class="video-card">
+                        <div class="video-meta">
+                            <h3 class="video-scene">Scene: real-world 1</h3>
+                            <h3 class="video-environment">Environment: Low-light</h3>
+                        </div>
+                        <div class="video-wrapper">
+                            <video controls>
+                                <source src="static/video-Real/001.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">Speed 1X</div>
+                        </div>
+                        <h3 class="video-instruction">go straight down hall to archway on your left turn left and walk straight to first doorway on your right, stop in doorway.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-text">
+                <div class="video-container">
+                    <!-- 左边视频卡片 -->
+                    <div class="video-card">
+                        <div class="video-meta">
+                            <h3 class="video-scene">Scene: real-world 2</h3>
+                            <h3 class="video-environment">Environment: Normal</h3>
+                        </div>
+                        <div class="video-wrapper">
+                            <video controls>
+                                <source src="static/video-Real/002.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">Speed 1X</div>
+                        </div>
+                        <h3 class="video-instruction">Turn right and exit into the bedroom. Turn left and walk to the wall and then turn left. Walk to the end of that area and turn right out the last door. Once out the door walk across the small room and enter the door to the far left. Stop once you enter the bedroom.</h3>
+                    </div>
+
+                    <!-- 右边视频卡片 -->
+                    <div class="video-card">
+                        <div class="video-meta">
+                            <h3 class="video-scene">Scene: real-world 2</h3>
+                            <h3 class="video-environment">Environment: Low-light</h3>
+                        </div>
+                        <div class="video-wrapper">
+                            <video controls>
+                                <source src="static/video-Real/003.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">Speed 1X</div>
+                        </div>
+                        <h3 class="video-instruction">go straight down hall to archway on your left turn left and walk straight to first doorway on your right, stop in doorway.</h3>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
-        <section class="section experiment-section">
+        <section class="section">
             <h2 class="section-title">Habitat Simulator Experiments</h2>
             <h2 class="section-subtitle">Allday-Habitat simulation platform</h2>
             <div class="image-container">
@@ -554,9 +629,9 @@
             </div>
             <div class="content-text">
                 We extended the Habitat embodied AI simulation platform to create diverse degraded environments for training and evaluating our AML-VLN task. We not only use normal environments, but also synthesize three types of challenging visual conditions:
-                <br><br><strong>Scattering environments:</strong>  Created using atmospheric scattering models that simulate how particles in the air (like fog, haze, or dust) affect image clarity by reducing visibility and adding atmospheric light.
-                <br><br><strong>Low-light environments: </strong> Generated using abnormal light imaging models that account for reduced illumination conditions, incorporating factors like camera response functions, system gain, exposure time, and various types of noise.
-                <br><br><strong>Overexposure environments: </strong> Synthesized using models that simulate excessive brightness conditions, where parts of the image become saturated due to too much light, resulting in loss of detail in bright regions.
+                <br><strong>Scattering environments:</strong>  Created using atmospheric scattering models that simulate how particles in the air (like fog, haze, or dust) affect image clarity by reducing visibility and adding atmospheric light.
+                <br><strong>Low-light environments: </strong> Generated using abnormal light imaging models that account for reduced illumination conditions, incorporating factors like camera response functions, system gain, exposure time, and various types of noise.
+                <br><strong>Overexposure environments: </strong> Synthesized using models that simulate excessive brightness conditions, where parts of the image become saturated due to too much light, resulting in loss of detail in bright regions.
             </div>
             <h2 class="section-subtitle">Vision-Language Navigation in Habitat Simulator</h2>
             <div class="content-text">
@@ -925,97 +1000,20 @@
 
         </section>
 
-
-
-        <section class="section">
-            <h2 class="section-title">Real-World Experiments</h2>
-            <h2 class="section-subtitle">robotic navigation system introduction</h2>
-            <div class="image-container">
-                <img src="static/FFF.jpg" alt="Main picture">
-            </div>
-            <div class="content-text">
-                The platform consists of a DeepRobotDog Lite2 quadruped robot, a Hikvision DS-E12 camera, a portable WiFi communication module, and a remote computation server equipped with an NVIDIA A6000 GPU. During deployment, the Hikvision DS-E12 mounted on the robot captures RGB visual streams from the real environment, providing essential perception signals for navigation and scene understanding. These visual data are transmitted in real time to the remote server through the portable WiFi module. The server performs inference using the proposed AlldayWalker system running on the A6000 GPU, which processes both user instructions and visual observations to generate navigation actions. The resulting control signals are then sent back to the DeepRobotDog Lite2 via the wireless communication channel. The robot executes these actions in the physical environment, enabling closed-loop interaction between perception, language reasoning, and embodied control. This platform supports flexible and robust experimentation of all-day multi-scene lifelong navigation, bridging simulation and real-world deployment.  
-            </div>
-            <h2 class="section-subtitle">Vision-Language Navigation in Real World</h2>
-            
-            <div class="content-text">
-                <div class="video-container">
-                    <!-- 左边视频卡片 -->
-                    <div class="video-card">
-                        <div class="video-meta">
-                            <h3 class="video-scene">Scene: real-world 1</h3>
-                            <h3 class="video-environment">Environment: Normal</h3>
-                        </div>
-                        <div class="video-wrapper">
-                            <video controls>
-                                <source src="static/video-Real/000.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="video-overlay">Speed 1X</div>
-                        </div>
-                        <h3 class="video-instruction">Turn right and exit into the bedroom. Turn left and walk to the wall and then turn left. Walk to the end of that area and turn right out the last door. Once out the door walk across the small room and enter the door to the far left. Stop once you enter the bedroom.</h3>
-                    </div>
-
-                    <!-- 右边视频卡片 -->
-                    <div class="video-card">
-                        <div class="video-meta">
-                            <h3 class="video-scene">Scene: real-world 1</h3>
-                            <h3 class="video-environment">Environment: Low-light</h3>
-                        </div>
-                        <div class="video-wrapper">
-                            <video controls>
-                                <source src="static/video-Real/001.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="video-overlay">Speed 1X</div>
-                        </div>
-                        <h3 class="video-instruction">go straight down hall to archway on your left turn left and walk straight to first doorway on your right, stop in doorway.</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-text">
-                <div class="video-container">
-                    <!-- 左边视频卡片 -->
-                    <div class="video-card">
-                        <div class="video-meta">
-                            <h3 class="video-scene">Scene: real-world 2</h3>
-                            <h3 class="video-environment">Environment: Normal</h3>
-                        </div>
-                        <div class="video-wrapper">
-                            <video controls>
-                                <source src="static/video-Real/002.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="video-overlay">Speed 1X</div>
-                        </div>
-                        <h3 class="video-instruction">Turn right and exit into the bedroom. Turn left and walk to the wall and then turn left. Walk to the end of that area and turn right out the last door. Once out the door walk across the small room and enter the door to the far left. Stop once you enter the bedroom.</h3>
-                    </div>
-
-                    <!-- 右边视频卡片 -->
-                    <div class="video-card">
-                        <div class="video-meta">
-                            <h3 class="video-scene">Scene: real-world 2</h3>
-                            <h3 class="video-environment">Environment: Low-light</h3>
-                        </div>
-                        <div class="video-wrapper">
-                            <video controls>
-                                <source src="static/video-Real/003.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="video-overlay">Speed 1X</div>
-                        </div>
-                        <h3 class="video-instruction">go straight down hall to archway on your left turn left and walk straight to first doorway on your right, stop in doorway.</h3>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
         <section class="section experiment-section">
-            <h2 class="section-title">Conclusion</h2>
+            <h2 class="section-title">Comparison Experiment Results</h2>
+            <div class="image-container">
+                <img src="static/result1.png" alt="Main picture">
+            </div>
+            <div class="image-container">
+                <img src="static/result2.png" alt="Main picture">
+            </div>
             <p class="content-text">
-                We introduce a All-day Multi-scenes Lifelong Vision-and-Language Navigation (AML-VLN) new problem to study lifelong adaptation across multiple scenes and diverse environments. We propose Tucker Adaptation (TuKA), a new parameter-efficient method represents the multi-hierarchical knowledge in a high-order tensor and uses Tucker decomposition to decouple shared and task-specific knowledge. We further propose a decoupled knowledge incremental learning strategy to support multi-hierarchical knowledge continual learning. Based on the proposed TuKA, we also develop an lifelong VLN agent named AlldayWalker, which achieves superior VLN performance compared to the SOTA baselines on the AML-VLN problem. Our research demonstrate the value of high-order tensor adaptation for continual multi-hierarchical knowledge representation learning.
+                Test results ( (a) <strong>SPL</strong> ↑, 
+                (b) <strong>F-SPL</strong> ↓, 
+                (c) <strong>OSR</strong> ↑, 
+                (d) <strong>F-OSR</strong> ↓ ) 
+                of comparison experiment under the AML-VLN settings.
             </p>
         </section>
     </div>
