@@ -571,47 +571,8 @@
                 Illustration of our all-day multi-scenes lifelong VLN Benchmark setting. The normal environment is marked in green color, low light is marked blue, scattering is marked yellow, and overexposure is marked in purple.
             </p>
         </section>
-        
+
         <section class="section experiment-section">
-            <h2 class="section-title">Simulator Setting</h2>
-            <div class="comparison-container">
-                <div class="grid-wrapper">
-                    <!-- Item 1 -->
-                    <div class="comparison-item">
-                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Habitat Natural Light<br>Scene Simulator</h3>
-                        <div class="image-container">
-                            <img src="static/normal.gif" alt="Natural lighting scene simulation">
-                        </div>
-                    </div>
-
-                    <!-- Item 2 -->
-                    <div class="comparison-item">
-                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Large-Scale Scattering Model<br>Simulating Scene Scattering</h3>
-                        <div class="image-container">
-                            <img src="static/scatter.gif" alt="Scene scattering simulation">
-                        </div>
-                    </div>
-
-                    <!-- Item 3 -->
-                    <div class="comparison-item">
-                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Camera Response Model Simulating<br>Scene Low Light</h3>
-                        <div class="image-container">
-                            <img src="static/lownight.gif" alt="Low light scene simulation">
-                        </div>
-                    </div>
-
-                    <!-- Item 4 -->
-                    <div class="comparison-item">
-                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Camera Response Model Simulating<br>Scene Overexposure</h3>
-                        <div class="image-container">
-                            <img src="static/overexpose.gif" alt="Overexposure scene simulation">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
             <h2 class="section-title">Real-World Experiments</h2>
             <h2 class="section-subtitle">robotic navigation system introduction</h2>
             <div class="image-container">
@@ -707,7 +668,7 @@
             </div>
         </section>
 
-        <section class="section experiment-section">
+        <section class="section">
             <h2 class="section-title">Habitat Simulator Experiments</h2>
             <h2 class="section-subtitle">Allday-Habitat simulation platform</h2>
             <div class="image-container">
@@ -719,6 +680,43 @@
                 <br><strong>Low-light environments: </strong> Generated using abnormal light imaging models that account for reduced illumination conditions, incorporating factors like camera response functions, system gain, exposure time, and various types of noise.
                 <br><strong>Overexposure environments: </strong> Synthesized using models that simulate excessive brightness conditions, where parts of the image become saturated due to too much light, resulting in loss of detail in bright regions.
             </div>
+            <h2 class="section-subtitle">Visual Examples for Allday-Habitat</h2>
+            <div class="comparison-container">
+                <div class="grid-wrapper">
+                    <!-- Item 1 -->
+                    <div class="comparison-item">
+                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Habitat Natural Light<br>Scene Simulator</h3>
+                        <div class="image-container">
+                            <img src="static/normal.gif" alt="Natural lighting scene simulation">
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="comparison-item">
+                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Simulation of scene scattering based on atmospheric scattering model</h3>
+                        <div class="image-container">
+                            <img src="static/scatter.gif" alt="Scene scattering simulation">
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="comparison-item">
+                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Simulating low-light scenes based on camera response models</h3>
+                        <div class="image-container">
+                            <img src="static/lownight.gif" alt="Low light scene simulation">
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="comparison-item">
+                        <h3 style="color: #d32f2f; text-align: center; font-weight: 700; font-size: 24px;">Simulating Scene Overexposure Based on Camera Response Model</h3>
+                        <div class="image-container">
+                            <img src="static/overexpose.gif" alt="Overexposure scene simulation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <h2 class="section-subtitle">Vision-Language Navigation in Habitat Simulator</h2>
             <div class="content-text">
                 <div class="video-container">
@@ -1086,7 +1084,7 @@
 
         </section>
 
-        <section class="section">
+        <section class="section experiment-section">
             <h2 class="section-title">Comparison Experiment Results</h2>
             <div class="image-container">
                 <img src="static/result1.png" alt="Main picture">
@@ -1103,7 +1101,7 @@
             </p>
         </section>
 
-        <section class="section experiment-section">
+        <section class="section">
             <h2 class="section-title">Extension Experiments</h2>
             <div class="image-container">
                 <img src="static/result3.png" alt="Main picture">
